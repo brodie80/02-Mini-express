@@ -1,3 +1,10 @@
+
+
+
+// Starts the server to begin listening
+
+
+
 const express = require('express');
 const path = require('path');
 
@@ -19,3 +26,5 @@ app.use(express.json());
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'reservations.html')));
 app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'home.html')));
 app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'tables.html')));
+
+app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
