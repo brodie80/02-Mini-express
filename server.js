@@ -11,9 +11,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Routes
-app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'reservations.html')));
-app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'home.html')));
-app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'tables.html')));
+app.get('/reservations', (req, res) => res.sendFile(path.join(__dirname, 'reservations.html')));
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'home.html')));
+app.get('/tables', (req, res) => res.sendFile(path.join(__dirname, 'tables.html')));
 
 //Listener
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));

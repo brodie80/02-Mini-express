@@ -38,6 +38,12 @@
                             Reservation</button></a>
                 </div>
 
+                <script>
+                    $("button").click(function () {
+                        $.get("/reservations.html", function (data) {
+                        });
+                    });
+                </script>
             </div>
 
         </div>
