@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/brodie80/02-Mini-express/issues"
   },
-  "homepage": "https://github.com/brodie80/02-Mini-express#readme"
+  "homepage": "https://github.com/brodie80/02-Mini-express#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
